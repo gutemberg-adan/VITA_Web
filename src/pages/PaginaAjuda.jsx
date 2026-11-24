@@ -1,0 +1,7 @@
+/** Tela de ajuda e suporte. */
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Activity, Bell, Bluetooth, CalendarDays, ChevronLeft, ChevronRight, ChevronDown, CircleHelp, Download, FileBarChart, FileText, Gauge, HeartPulse, History, LayoutDashboard, Menu, Phone, RefreshCw, Settings, ShieldCheck, Smartphone, UserRound, Wifi, BatteryMedium, Thermometer, Droplets, Share2, AlertTriangle, CheckCircle2, Siren, Clock3, X } from 'lucide-react';
+import { patient, readings, alerts, history, intervals, downloadFile, downloadCSV, downloadPDF, firstAndSecondName, formatCPF, formatPhone, useSaved, Head, Card, Battery, Pill, Title, Legend, Chart, Calendar, Alerts, Today, Quick, PageIntro, Field } from '../componentesCompartilhados.jsx';
+/** Mantém a lógica da tela de ajuda. */
+export function HelpPage() { return <><Head title="Ajuda e Suporte" sub="Encontre orientações para utilizar o V.I.T.A. com segurança."/><div className="helpgrid"><section className="panel help"><CircleHelp size={30}/><h2>Central de ajuda</h2><p>Consulte orientações sobre medições, dispositivo, alertas e utilização do sistema.</p><button className="btn primary">Ver orientações</button></section><section className="panel help"><Phone size={30}/><h2>Contato</h2><p>Em caso de necessidade, utilize os contatos de emergência cadastrados.</p><button className="btn outline">Ver contatos</button></section></div></>; }
